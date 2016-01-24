@@ -2,6 +2,7 @@
 	"name": "home",
 	"dependencies": {
 		"p5js": "latest",
-		"jquery": "latest"
+		"jquery": "~2.2.0",
+		"HTML5-Reset": "latest"
 	}
 }
