@@ -9,34 +9,51 @@
   height: 500px; }
 
 /* line 11, /Users/arashsaidi/Code/web/home/styles/main.scss */
+#header-links {
+  background-color: #4d4d4d; }
+
+/* line 15, /Users/arashsaidi/Code/web/home/styles/main.scss */
 #header-links li:first-child {
   margin-left: 0px; }
 
-/* line 15, /Users/arashsaidi/Code/web/home/styles/main.scss */
+/* line 19, /Users/arashsaidi/Code/web/home/styles/main.scss */
 #header-links li {
   font-size: 2em;
-  padding-right: 40px;
-  padding-left: 5px;
+  padding-right: 5%;
+  padding-left: 5%;
   margin-left: -5px;
   display: inline;
   color: white;
   cursor: pointer;
   cursor: hand; }
 
-/* line 26, /Users/arashsaidi/Code/web/home/styles/main.scss */
+/* line 30, /Users/arashsaidi/Code/web/home/styles/main.scss */
 #design {
   background-color: #f3696c; }
 
-/* line 30, /Users/arashsaidi/Code/web/home/styles/main.scss */
+/* line 34, /Users/arashsaidi/Code/web/home/styles/main.scss */
 #video {
   background-color: #afd872; }
 
-/* line 34, /Users/arashsaidi/Code/web/home/styles/main.scss */
+/* line 38, /Users/arashsaidi/Code/web/home/styles/main.scss */
 #music {
   background-color: #88dbda; }
 
-/* line 38, /Users/arashsaidi/Code/web/home/styles/main.scss */
+/* line 42, /Users/arashsaidi/Code/web/home/styles/main.scss */
 #about {
   background-color: #4d4d4d; }
+
+@media (max-width: 900px) {
+  /* line 47, /Users/arashsaidi/Code/web/home/styles/main.scss */
+  #header-links li {
+    font-size: 2em;
+    margin-left: 0;
+    display: block;
+    color: white;
+    cursor: pointer;
+    cursor: hand; }
+  /* line 55, /Users/arashsaidi/Code/web/home/styles/main.scss */
+  #header-links {
+    background-color: white; } }
 
 /*# sourceMappingURL=main.css.map */
