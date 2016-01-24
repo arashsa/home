@@ -56,3 +56,17 @@
 		background-color: white;
 	}
 }
+
+@media screen (max-width: 400px) {
+	#header-links li {
+		font-size: 3em;
+		margin-left: 0;
+		display: block;
+		color: white;
+		cursor: pointer;
+		cursor: hand;
+	}
+	#header-links {
+		background-color: white;
+	}
+}
