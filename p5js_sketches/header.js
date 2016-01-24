@@ -1,14 +1,26 @@
-var header = function (s) {
-	s.setup = function () {
-		s.createCanvas(400, 400);
-		s.background(0);
+// Anonymous function preventing outside access
+(function () {
+	function fade(s) {
+		s.noStroke();
+		s.fill(0, 10);
+		s.rect(0, 0, s.width, s.height);
 	}
 
-	s.draw = function () {
+	var header = function (s) {
+		s.setup = function () {
+			s.createCanvas($("#header").width(), 200);
+		};
 
+		s.draw = function () {
+			fade(s);
+		};
+
+		s.windowResized = function () {
+			s.resizeCanvas($("#header").width(), 200);
+		};
 	}
-}
 
-$(document).ready(function () {
-	var temp = new p5(header, "header");
-});
+	$(document).ready(function () {
+		var temp = new p5(header, "header");
+	});
+})();
