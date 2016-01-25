@@ -1,5 +1,5 @@
 html {
-	font-family: 'Oswald', sans-serif;
+	font-family: 'Fjalla one', sans-serif;
 }
 
 .container {
@@ -13,6 +13,7 @@ html {
 }
 
 #header-links {
+	padding-top: 5px;
 	background-color: rgb(77, 77, 77);
 }
 
@@ -24,6 +25,7 @@ html {
 	font-size: 2.5em;
 	padding-right: 3%;
 	padding-left: 3%;
+	padding-top: 5px;
 	margin-left: -5px;
 	display: inline;
 	color: white;
@@ -54,6 +56,7 @@ html {
 .active {
 	background-color: black;
 	color: white;
+	transition: background-color 1.5s;
 }
 
 @media (max-width: 1000px) {
@@ -65,6 +68,7 @@ html {
 		cursor: hand;
 	}
 	#header-links {
+		padding-top: 0;
 		background-color: white;
 	}
 }
