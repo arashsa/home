@@ -58,11 +58,11 @@ var header = function (s) {
 	};
 
 	s.windowResized = function () {
-		s.resizeCanvas($("#header").width(), $("#header").height());
-	};
+	s.resizeCanvas($("#header").width(), $("#header").height());
+};
 
 }
 
-$(document).ready(function () {
-	temp = new p5(header, "header");
-});
+//$(document).ready(function () {
+//	temp = new p5(header, "header");
+//});
