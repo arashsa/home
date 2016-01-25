@@ -1,36 +1,38 @@
+var reset = function (height, which) {
+	$("#header").animate({
+		"height": height
+	}, function () {
+		$("#header").css({
+			"height": height
+		});
+		temp.resizeCanvas($("#header").width(), $("#header").height());
+	});
+	$(".active").removeClass("active");
+	$(which).addClass("active");
+};
+
 $(document).ready(function () {
-	$("#design").click(function (event) {
-		$("#header").css({
-			"height": "100px"
-		});
-		temp.resizeCanvas($("#header").width(), $("#header").height());
+	$(".design").click(function (event) {
+		reset("100px", ".design");
 	});
 
-	$("#video").click(function (event) {
-		$("#header").css({
-			"height": "100px"
-		});
-		temp.resizeCanvas($("#header").width(), $("#header").height());
+	$(".video").click(function (event) {
+		reset("100px", ".video");
 	});
 
-	$("#music").click(function (event) {
-		$("#header").css({
-			"height": "100px"
-		});
-		temp.resizeCanvas($("#header").width(), $("#header").height());
+	$(".music").click(function (event) {
+		reset("100px", ".music");
 	});
 
-	$("#about").click(function (event) {
-		$("#header").css({
-			"height": "100px"
-		});
-		temp.resizeCanvas($("#header").width(), $("#header").height());
+	$(".text").click(function (event) {
+		reset("100px", ".text");
+	});
+
+	$(".about").click(function (event) {
+		reset("100px", ".about");
 	});
 
 	$("#header").click(function (event) {
-		$("#header").css({
-			"height": "500px"
-		});
-		temp.resizeCanvas($("#header").width(), $("#header").height());
+		reset("600px");
 	})
 });

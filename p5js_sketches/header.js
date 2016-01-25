@@ -40,11 +40,13 @@ function Pos(x, y, size, speed, s) {
 
 var header = function (s) {
 	var rects = [];
-	var numberOfRects = 1;
+	var numberOfRects = 10;
+	var size = 50;
+
 	s.setup = function () {
 		s.createCanvas($("#header").width(), $("#header").height());
 		for (var i = 0; i < numberOfRects; i++) {
-			rects.push(new Pos(s.random(s.width), s.random(s.width), 100, 5, s));
+			rects.push(new Pos(s.random(s.width), s.random(s.width), size, 5, s));
 		}
 	};
 
