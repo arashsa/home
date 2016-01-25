@@ -1,12 +1,12 @@
 var reset = function (height, which) {
 	$("#header").animate({
 		"height": height
-	}, function () {
+	}, 1000, function () {
 		$("#header").css({
 			"height": height
 		});
-		temp.resizeCanvas($("#header").width(), $("#header").height());
 	});
+	temp.resizeCanvas($("#header").width(), height.replace("px", ""));
 	$(".active").removeClass("active");
 	$(which).addClass("active");
 };

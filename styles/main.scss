@@ -21,7 +21,7 @@ html {
 }
 
 #header-links li {
-	font-size: 2em;
+	font-size: 2.5em;
 	padding-right: 3%;
 	padding-left: 3%;
 	margin-left: -5px;
@@ -36,15 +36,15 @@ html {
 }
 
 .video {
-	background-color: rgb(175, 216, 114);
-}
-
-.music {
 	background-color: rgb(136, 219, 218);
 }
 
+.music {
+	background-color: rgb(175, 216, 114);
+}
+
 .text {
-	background-color: rgb(81, 70, 221);
+	background-color: rgb(85, 170, 229);
 }
 
 .about {
@@ -58,7 +58,6 @@ html {
 
 @media (max-width: 1000px) {
 	#header-links li {
-		font-size: 2em;
 		margin-left: 0;
 		display: block;
 		color: white;
