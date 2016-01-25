@@ -1,17 +1,13 @@
-var bannerDown = true;
-
-var reset = function (height, which) {
-
+var animate = function (height) {
 	// animation banner
 	$("#header").animate({
 		"height": height
 	}, 1000, function () {
-		$("#header").css({
-			"height": height
-		});
+		temp.resizeCanvas($("#header").width(), height.replace("px", ""));
 	});
-	temp.resizeCanvas($("#header").width(), height.replace("px", ""));
+}
 
+var reset = function (height, which) {
 	// color for banners
 	$(".active").removeClass("active");
 	$(which).addClass("active");
@@ -45,5 +41,6 @@ $(document).ready(function () {
 
 	$("#header").click(function (event) {
 		reset("600px");
+		$("#main").html("")
 	})
 });

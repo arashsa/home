@@ -1,27 +1,31 @@
-/* line 1, /Users/arashsaidi/Code/web/home/styles/main.scss */
+/* line 14, /Users/arashsaidi/Code/web/home/styles/main.scss */
 html {
-  font-family: 'Fjalla one', sans-serif; }
+  font-family: "Fjalla one", sans-serif; }
 
-/* line 5, /Users/arashsaidi/Code/web/home/styles/main.scss */
+/* line 18, /Users/arashsaidi/Code/web/home/styles/main.scss */
+h1 {
+  font-size: 2em; }
+
+/* line 22, /Users/arashsaidi/Code/web/home/styles/main.scss */
 .container {
   padding-left: 10%;
   padding-right: 10%; }
 
-/* line 10, /Users/arashsaidi/Code/web/home/styles/main.scss */
+/* line 27, /Users/arashsaidi/Code/web/home/styles/main.scss */
 #header {
   margin-top: 10%;
   height: 600px; }
 
-/* line 15, /Users/arashsaidi/Code/web/home/styles/main.scss */
+/* line 32, /Users/arashsaidi/Code/web/home/styles/main.scss */
 #header-links {
   padding-top: 5px;
-  background-color: #4d4d4d; }
+  background-color: #960078; }
 
-/* line 20, /Users/arashsaidi/Code/web/home/styles/main.scss */
+/* line 37, /Users/arashsaidi/Code/web/home/styles/main.scss */
 #header-links li:first-child {
   margin-left: 0px; }
 
-/* line 24, /Users/arashsaidi/Code/web/home/styles/main.scss */
+/* line 41, /Users/arashsaidi/Code/web/home/styles/main.scss */
 #header-links li {
   font-size: 2.5em;
   padding-right: 3%;
@@ -31,43 +35,52 @@ html {
   display: inline;
   color: white;
   cursor: pointer;
-  cursor: hand; }
+  cursor: hand;
+  transition: border-bottom 0.2s ease 0s; }
 
-/* line 36, /Users/arashsaidi/Code/web/home/styles/main.scss */
+/* line 54, /Users/arashsaidi/Code/web/home/styles/main.scss */
 .design {
-  background-color: #f3696c; }
+  background-color: #fa0078;
+  border-bottom: solid 0px; }
 
-/* line 40, /Users/arashsaidi/Code/web/home/styles/main.scss */
+/* line 59, /Users/arashsaidi/Code/web/home/styles/main.scss */
 .video {
-  background-color: #88dbda; }
+  background-color: #dc0078;
+  border-bottom: solid 0px; }
 
-/* line 44, /Users/arashsaidi/Code/web/home/styles/main.scss */
+/* line 64, /Users/arashsaidi/Code/web/home/styles/main.scss */
 .music {
-  background-color: #afd872; }
+  background-color: #c80078;
+  border-bottom: solid 0px; }
 
-/* line 48, /Users/arashsaidi/Code/web/home/styles/main.scss */
+/* line 69, /Users/arashsaidi/Code/web/home/styles/main.scss */
 .text {
-  background-color: #55aae5; }
+  background-color: #b40078;
+  border-bottom: solid 0px; }
 
-/* line 52, /Users/arashsaidi/Code/web/home/styles/main.scss */
+/* line 74, /Users/arashsaidi/Code/web/home/styles/main.scss */
 .about {
-  background-color: #4d4d4d; }
+  background-color: #960078;
+  border-bottom: solid 0px; }
 
-/* line 56, /Users/arashsaidi/Code/web/home/styles/main.scss */
+/* line 79, /Users/arashsaidi/Code/web/home/styles/main.scss */
 .active {
-  background-color: black;
-  color: white;
-  transition: background-color 1.5s; }
+  border-bottom: solid black 2px;
+  transition: border-bottom 0.2s ease 0s; }
+
+/* line 84, /Users/arashsaidi/Code/web/home/styles/main.scss */
+.section {
+  padding-top: 5%; }
 
 @media (max-width: 1000px) {
-  /* line 63, /Users/arashsaidi/Code/web/home/styles/main.scss */
+  /* line 89, /Users/arashsaidi/Code/web/home/styles/main.scss */
   #header-links li {
     margin-left: 0;
     display: block;
     color: white;
     cursor: pointer;
     cursor: hand; }
-  /* line 70, /Users/arashsaidi/Code/web/home/styles/main.scss */
+  /* line 96, /Users/arashsaidi/Code/web/home/styles/main.scss */
   #header-links {
     padding-top: 0;
     background-color: white; } }

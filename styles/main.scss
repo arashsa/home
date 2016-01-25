@@ -1,5 +1,22 @@
+//variables
+$transition: 0.2s ease 0s;
+$font-stack: 'Fjalla one',
+sans-serif;
+$header-height: 600px;
+$design-color: rgb(250, 0, 120);
+$video-color: rgb(220, 0, 120);
+$music-color: rgb(200, 0, 120);
+$text-color: rgb(180, 0, 120);
+$about-color: rgb(150, 0, 120);
+$background-color-links:rgb(150, 0, 120);
+//
+//
 html {
-	font-family: 'Fjalla one', sans-serif;
+	font-family: $font-stack;
+}
+
+h1 {
+	font-size: 2em;
 }
 
 .container {
@@ -9,12 +26,12 @@ html {
 
 #header {
 	margin-top: 10%;
-	height: 600px;
+	height: $header-height;
 }
 
 #header-links {
 	padding-top: 5px;
-	background-color: rgb(77, 77, 77);
+	background-color: $background-color-links;
 }
 
 #header-links li:first-child {
@@ -31,32 +48,41 @@ html {
 	color: white;
 	cursor: pointer;
 	cursor: hand;
+	transition: border-bottom $transition;
 }
 
 .design {
-	background-color: rgb(243, 105, 108);
+	background-color: $design-color;
+	border-bottom: solid 0px;
 }
 
 .video {
-	background-color: rgb(136, 219, 218);
+	background-color: $video-color;
+	border-bottom: solid 0px;
 }
 
 .music {
-	background-color: rgb(175, 216, 114);
+	background-color: $music-color;
+	border-bottom: solid 0px;
 }
 
 .text {
-	background-color: rgb(85, 170, 229);
+	background-color: $text-color;
+	border-bottom: solid 0px;
 }
 
 .about {
-	background-color: rgb(77, 77, 77);
+	background-color: $about-color;
+	border-bottom: solid 0px;
 }
 
 .active {
-	background-color: black;
-	color: white;
-	transition: background-color 1.5s;
+	border-bottom: solid black 2px;
+	transition: border-bottom $transition;
+}
+
+.section {
+	padding-top: 5%;
 }
 
 @media (max-width: 1000px) {
