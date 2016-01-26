@@ -29,6 +29,7 @@ var reset = function (which) {
 	$(which).addClass("active");
 };
 
+// click events
 $(document).ready(function () {
 	$(".design").click(function (event) {
 		reset(".design");

@@ -68,21 +68,21 @@ h1 {
   border-bottom: solid black 2px;
   transition: border-bottom 0.2s ease 0s; }
 
-/* line 84, /Users/arashsaidi/Code/web/home/styles/main.scss */
-.section {
-  padding-top: 5%; }
-
 @media (max-width: 1000px) {
-  /* line 89, /Users/arashsaidi/Code/web/home/styles/main.scss */
+  /* line 85, /Users/arashsaidi/Code/web/home/styles/main.scss */
   #header-links li {
     margin-left: 0;
     display: block;
     color: white;
     cursor: pointer;
     cursor: hand; }
-  /* line 96, /Users/arashsaidi/Code/web/home/styles/main.scss */
+  /* line 92, /Users/arashsaidi/Code/web/home/styles/main.scss */
   #header-links {
     padding-top: 0;
     background-color: white; } }
+
+/* line 98, /Users/arashsaidi/Code/web/home/styles/main.scss */
+#main {
+  padding-top: 2%; }
 
 /*# sourceMappingURL=main.css.map */
