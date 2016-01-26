@@ -81,10 +81,6 @@ h1 {
 	transition: border-bottom $transition;
 }
 
-.section {
-	padding-top: 5%;
-}
-
 @media (max-width: 1000px) {
 	#header-links li {
 		margin-left: 0;
@@ -97,4 +93,8 @@ h1 {
 		padding-top: 0;
 		background-color: white;
 	}
+}
+
+#main {
+	padding-top: 2%;
 }

@@ -3,6 +3,7 @@
 	"dependencies": {
 		"p5js": "latest",
 		"jquery": "~2.2.0",
-		"HTML5-Reset": "latest"
+		"HTML5-Reset": "latest",
+		"css-modal": "latest"
 	}
 }
