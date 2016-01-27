@@ -79,7 +79,7 @@ html {
 	left: 50%;
 	z-index: 20;
 	margin-left: -325px;
-	width: 650px;
+	width: 800px;
 	overflow-x: hidden;
 	-webkit-overflow-scrolling: touch;
 }

@@ -109,6 +109,7 @@ var gen1 = function (s) {
 	var size = 0.1;
 	s.setup = function () {
 		s.createCanvas($("#header").width(), $("#header").height());
+		s.frameRate(30);
 	}
 
 	s.draw = function () {

@@ -1,17 +1,14 @@
-// Anonymous function preventing outside access
-(function () {
-	var p5Instance = function (s) {
+var p5Instance = function (s) {
 
-		s.setup = function () {
-			s.createCanvas(100, 100);
-		};
+	s.setup = function () {
+		s.createCanvas(600, 400);
+	};
 
-		s.draw = function () {
+	s.draw = function () {
+		s.rect(s.random(s.width), s.random(s.height), 10, 10);
+	};
+}
 
-		};
-	}
-
-	$(document).ready(function () {
-		var toRender = new p5(p5Instance, "name-of-div");
-	});
-})();
+$("#modal").one("click", function () {
+	var toRender = new p5(p5Instance, "name-of-id");
+});
