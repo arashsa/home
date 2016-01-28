@@ -1,7 +1,7 @@
 var bannerDown = true;
 var minHeight = "100px";
-var maxHeight = "500px";
-var animationSpeed = 500;
+var maxHeight = "600px";
+var animationSpeed = 400;
 
 var animate = function (height) {
 	// animation banner

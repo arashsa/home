@@ -2,7 +2,8 @@
 $transition: 0.2s ease 0s;
 $font-stack: 'Fjalla one',
 sans-serif;
-$header-height: 500px;
+$header-height: 600px;
+$padding-top: 100px;
 $design-color: rgb(250, 0, 120);
 $video-color: rgb(220, 0, 120);
 $music-color: rgb(200, 0, 120);
@@ -25,7 +26,7 @@ h1 {
 }
 
 #header {
-	margin-top: 10%;
+	margin-top: $padding-top;
 	height: $header-height;
 }
 
