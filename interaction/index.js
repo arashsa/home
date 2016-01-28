@@ -41,7 +41,6 @@ var bannerEvents = function (name) {
 
 // click events
 $(document).ready(function () {
-
 	bannerEvents(".design");
 	bannerEvents(".video");
 	bannerEvents(".music");
