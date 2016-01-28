@@ -29,47 +29,24 @@ var reset = function (which) {
 	$(which).addClass("active");
 };
 
+var bannerEvents = function (name) {
+	$(name).click(function (event) {
+		reset(name);
+		$("#main").load("views/" + name.replace('.', '') + ".html");
+		if (bannerDown) {
+			animate(minHeight);
+		}
+	});
+}
+
 // click events
 $(document).ready(function () {
-	$(".design").click(function (event) {
-		reset(".design");
-		$("#main").load("views/design.html");
-		if (bannerDown) {
-			animate(minHeight);
-		}
-	});
 
-	$(".video").click(function (event) {
-		reset(".video");
-		$("#main").load("views/video.html");
-		if (bannerDown) {
-			animate(minHeight);
-		}
-	});
-
-	$(".music").click(function (event) {
-		reset(".music");
-		$("#main").load("views/music.html");
-		if (bannerDown) {
-			animate(minHeight);
-		}
-	});
-
-	$(".text").click(function (event) {
-		reset(".text");
-		$("#main").load("views/text.html");
-		if (bannerDown) {
-			animate(minHeight);
-		}
-	});
-
-	$(".about").click(function (event) {
-		reset(".about");
-		$("#main").load("views/about.html");
-		if (bannerDown) {
-			animate(minHeight);
-		}
-	});
+	bannerEvents(".design");
+	bannerEvents(".video");
+	bannerEvents(".music");
+	bannerEvents(".text");
+	bannerEvents(".about");
 
 	$("#header").click(function (event) {
 		reset("");
