@@ -1,7 +1,0 @@
-{
-    "name": "home",
-    "dependencies": {
-        "p5js": "latest",
-        "jquery": "~2.2.0"
-    }
-}
