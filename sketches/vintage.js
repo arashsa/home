@@ -1,5 +1,5 @@
 function x1(s, t) {
-	return s.sin(t / 10) * 20 + s.sin(t / 5) * 20;
+	return s.sin(t / 5) * 150 + s.sin(t / 5) * 200;
 }
 
 function y1(s, t) {
@@ -7,7 +7,7 @@ function y1(s, t) {
 }
 
 function x2(s, t) {
-	return s.sin(t / 10) * 200;
+	return s.sin(t / 20) * 200;
 }
 
 function y2(s, t) {
@@ -16,18 +16,21 @@ function y2(s, t) {
 
 var vintage = function (s) {
 	var t = 0;
-	const LINES = 40;
+	const LINES = 20;
+
+	// color
 	var a = 0;
 	var aa = 0.2;
 	var b = 100;
 	var bb = 1.5;
 	var c = 130;
 	var cc = 0.4;
+
 	s.setup = function () {
 		s.createCanvas(s.windowWidth - 15, s.windowHeight - 15);
 		s.translate(s.width / 2, s.height / 2);
 		s.background(50);
-		s.strokeWeight(10);
+		s.strokeWeight(5);
 	}
 
 	s.draw = function () {
