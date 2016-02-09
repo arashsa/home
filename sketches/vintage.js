@@ -1,9 +1,9 @@
 function x1(s, t) {
-	return s.sin(t / 10) * 100 + s.sin(t / 5) * 20;
+	return s.sin(t / 10) * 20 + s.sin(t / 5) * 20;
 }
 
 function y1(s, t) {
-	return s.cos(t / 12) * 200;
+	return s.cos(t / 12) * 200 + s.cos(t / 12) * 30;
 }
 
 function x2(s, t) {
@@ -17,6 +17,12 @@ function y2(s, t) {
 var vintage = function (s) {
 	var t = 0;
 	const LINES = 40;
+	var a = 0;
+	var aa = 0.2;
+	var b = 100;
+	var bb = 1.5;
+	var c = 130;
+	var cc = 0.4;
 	s.setup = function () {
 		s.createCanvas(s.windowWidth - 15, s.windowHeight - 15);
 		s.translate(s.width / 2, s.height / 2);
@@ -28,9 +34,20 @@ var vintage = function (s) {
 		s.background(50);
 		for (var i = 0; i < LINES; i++) {
 			//			s.stroke(s.random(255));
+			s.stroke(a, b, c);
 			s.line(x1(s, t + i), x2(s, t + i), y1(s, t + i), y2(s, t + i));
 		}
+		a += aa;
+		b += bb;
+		c += cc;
 		t += 0.5;
+
+		if (a > 255 || a < 0)
+			aa = -aa;
+		if (b > 255 || b < 0)
+			bb = -bb;
+		if (c > 255 || b < 0)
+			cc = -cc;
 	}
 }
 
